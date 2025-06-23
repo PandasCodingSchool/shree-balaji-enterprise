@@ -252,7 +252,7 @@
                 >.
               </p>
             </div>
-            <form>
+            <form action="https://formspree.io/f/xrbkyavj" method="POST">
               <div class="row g-3">
                 <div class="col-lg-12 col-xl-6">
                   <div class="form-floating border border-secondary">
@@ -260,7 +260,9 @@
                       type="text"
                       class="form-control"
                       id="name"
+                      name="name"
                       placeholder="Your Name"
+                      required
                     />
                     <label for="name">Your Name</label>
                   </div>
@@ -271,7 +273,9 @@
                       type="email"
                       class="form-control"
                       id="email"
+                      name="email"
                       placeholder="Your Email"
+                      required
                     />
                     <label for="email">Your Email</label>
                   </div>
@@ -279,9 +283,10 @@
                 <div class="col-lg-12 col-xl-6">
                   <div class="form-floating border border-secondary">
                     <input
-                      type="phone"
+                      type="tel"
                       class="form-control"
                       id="phone"
+                      name="phone"
                       placeholder="Phone"
                     />
                     <label for="phone">Your Phone</label>
@@ -293,6 +298,7 @@
                       type="text"
                       class="form-control"
                       id="project"
+                      name="project"
                       placeholder="Project"
                     />
                     <label for="project">Your Project</label>
@@ -304,6 +310,7 @@
                       type="text"
                       class="form-control"
                       id="subject"
+                      name="subject"
                       placeholder="Subject"
                     />
                     <label for="subject">Subject</label>
@@ -315,13 +322,15 @@
                       class="form-control"
                       placeholder="Leave a message here"
                       id="message"
+                      name="message"
                       style="height: 160px"
+                      required
                     ></textarea>
                     <label for="message">Message</label>
                   </div>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-primary w-100 py-3">
+                  <button class="btn btn-primary w-100 py-3" type="submit">
                     Send Message
                   </button>
                 </div>
